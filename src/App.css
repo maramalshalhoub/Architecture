@@ -18,10 +18,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.P{
+  text-align: center;
+}
+h4{
+  padding-top:30px;
+}
+h3{
+  padding-top:30px;
+}
+p{
+  text-align: justify;
+}
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
