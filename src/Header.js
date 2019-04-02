@@ -11,7 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-  
+  import Services from './Services';
 
  class Header extends Component {
   constructor(props) {
@@ -19,8 +19,16 @@ import {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      page:'home',
+      details:[]
     };
+  }
+// on click services takes me to services
+  handleServices= ()=>{
+    this.setState({page:'services'});
+    const service = <Services />
+    this.setState({details:service})
   }
   toggle() {
     this.setState({
@@ -28,6 +36,7 @@ import {
     });
   }
   render() {
+    const change = (this.state.page)==='home'? ' is-active' : ' in-active';
     return (
 <div>
   <div>
@@ -47,7 +56,7 @@ import {
                 Services
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
+                  <DropdownItem onClick={()=>this.handleServices()}>
                   Architecture
                   </DropdownItem>
                   <DropdownItem>
@@ -68,7 +77,8 @@ import {
           </Collapse>
         </Navbar>
   </div>
-  <div>
+  {this.state.details}
+  <div className={change}>
     <img src="https://i.ibb.co/TmnXYkz/image-2019-03-31.jpg" width="1280px"/>
   </div>
 </div>
