@@ -6,18 +6,13 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink} from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Projects from './Projects'
 import Services from './Services';
-import data from './data'
-
+import Portfolio from './Portfolio'
  class Header extends Component {
   constructor(props) {
     super(props);
@@ -29,12 +24,19 @@ import data from './data'
       details:[]
     };
   }
+
 // on click services takes me to services
   handleServices= ()=>{
     this.setState({page:'services'});
     const service = <Services />
     this.setState({details:service})
   }
+// on click portfolio takes me to services
+handlePortfolio= ()=>{
+  this.setState({page:'portfolios'});
+  const portfolio = <Portfolio />
+  this.setState({details:portfolio})
+}
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -47,6 +49,7 @@ import data from './data'
     
     return (
 <div>
+{/* Div that handles navigation bar */}
   <div>
       <Navbar color="light" light expand="md">
           <NavbarBrand href="/home" padding="0" margin="0"><img src="https://i.ibb.co/DR9HHc4/logoNew.png" alt="logo"/></NavbarBrand>
@@ -63,7 +66,7 @@ import data from './data'
                 <NavLink onClick={this.handleServices}>Services</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Portfolio/">Portfolio</NavLink>
+                <NavLink onClick={this.handlePortfolio}>Portfolio</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/ContactUs/">Contact Us</NavLink>
@@ -76,8 +79,9 @@ import data from './data'
   <div className={change}>
     <img src="https://i.ibb.co/TmnXYkz/image-2019-03-31.jpg" width="1280px"/>
   </div>
+
+{/* Div that handles the home page cards*/}
   <div>
-  {/* {this.state.details} */}
       <div className={change}>
         <CardGroup>
         <Card>
@@ -114,6 +118,8 @@ import data from './data'
           </Card.Footer>
         </Card>
       </CardGroup>
+
+{/* Div that handles clients in one container  */}
       <div>
       <h4>Some of Our Clients</h4>
       <Container>
