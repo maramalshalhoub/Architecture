@@ -12,7 +12,9 @@ import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Projects from './Projects'
 import Services from './Services';
-import Portfolio from './Portfolio'
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+
  class Header extends Component {
   constructor(props) {
     super(props);
@@ -31,11 +33,17 @@ import Portfolio from './Portfolio'
     const service = <Services />
     this.setState({details:service})
   }
-// on click portfolio takes me to services
+// on click portfolio to slideshow
 handlePortfolio= ()=>{
   this.setState({page:'portfolios'});
   const portfolio = <Portfolio />
   this.setState({details:portfolio})
+}
+// contact us method
+handleContact= ()=>{
+  this.setState({page:'contactus'});
+  const contact = <Contact />
+  this.setState({details:contact})
 }
   toggle() {
     this.setState({
@@ -69,7 +77,7 @@ handlePortfolio= ()=>{
                 <NavLink onClick={this.handlePortfolio}>Portfolio</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/ContactUs/">Contact Us</NavLink>
+                <NavLink onClick={this.handleContact}>Contact Us</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -114,7 +122,7 @@ handlePortfolio= ()=>{
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted" > Read more..</small>
+            <small className="text-muted" onClick={this.handleServices}> Read more..</small>
           </Card.Footer>
         </Card>
       </CardGroup>

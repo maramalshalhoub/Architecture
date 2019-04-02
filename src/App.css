@@ -40,6 +40,9 @@ p{
 .is-active{
   display: inline;
 }
+.con{
+  text-align: center;
+}
 /* .carousel {
   position: absolute;
   max-width:900px;
