@@ -40,6 +40,10 @@ p{
 .is-active{
   display: inline;
 }
+.map{
+  padding: 10px;
+  left:-25%;
+}
 .con{
   text-align: center;
 }

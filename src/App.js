@@ -8,6 +8,7 @@ class App extends Component {
         <div className="App">
               <Header />
               <footer>
+                <br/>
                 <h6>@2019 SBinShalhoub Company. <br/> All Rights Reserved.</h6>
               </footer>
         </div>

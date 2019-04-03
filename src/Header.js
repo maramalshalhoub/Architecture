@@ -26,7 +26,12 @@ import Contact from './Contact';
       details:[]
     };
   }
-
+// on click Projects takes me to Map
+handleProjects= ()=>{
+  this.setState({page:'projects'});
+  const project = <Projects />
+  this.setState({details:project})
+}
 // on click services takes me to services
   handleServices= ()=>{
     this.setState({page:'services'});
@@ -68,7 +73,7 @@ handleContact= ()=>{
                 <NavLink href="/Home/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Projects/">Projects</NavLink>
+                <NavLink onClick={this.handleProjects}>Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink onClick={this.handleServices}>Services</NavLink>
@@ -104,13 +109,13 @@ handleContact= ()=>{
         <Card>
           <Card.Img variant="top" src="https://i.ibb.co/jzz5dxZ/Architectural-Engineers.jpg" />
           <Card.Body>
-            <Card.Title>Projects</Card.Title>
+            <Card.Title onClick={this.handleProjects}>Projects</Card.Title>
             <Card.Text>
                  We are an architectural interior and Project management office, experienced in the 
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-          <small className="text-muted"> <Projects  /><a href="Projects.js"> Read more..</a></small>
+          <small className="text-muted" onClick={this.handleProjects}>Read more..</small>
           </Card.Footer>
         </Card>
         <Card>
