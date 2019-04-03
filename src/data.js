@@ -3,7 +3,8 @@ const data={
         {
             id: "123",
             index: "1",
-            picture: "https://i.ibb.co/x65rd5Q/PHOTO-2019-03-23-15-33-07.jpg"
+            picture: "https://i.ibb.co/x65rd5Q/PHOTO-2019-03-23-15-33-07.jpg",
+            parent: ''
 
         },
         {
