@@ -1,33 +1,14 @@
-import React, { Component } from 'react';
-import data from './data'
-import Carousel from 'react-bootstrap/Carousel'
+import React from 'react';
 
-export default class Contact extends Component {
-// constructor(props, context) {
-//     super(props, context);
-
-//     this.handleSelect = this.handleSelect.bind(this);
-
-//     this.state = {
-//       index: 0,
-//       direction: null,
-//     };
-//   }
-
-//   handleSelect(selectedIndex, e) {
-//     this.setState({
-//       index: selectedIndex,
-//       direction: e.direction,
-//     });
-//   }
-
-  render() {
-
+const Contact =()=> {
+  
     return (
         <div>
+            <br />
             <h1>
                 Contact Us
             </h1>
+            <br/>
             <h5>
                 Name: 
             </h5>
@@ -40,6 +21,8 @@ export default class Contact extends Component {
                 Email: 
             </h5>
             <p className="con"> sbinshalhoub@gmail.com</p>
+        <br />
         </div>
     )
-}}
+}
+export default Contact

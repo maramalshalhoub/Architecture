@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ![GA Logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Architecture
 
-## Available Scripts
+## Overview:
 
-In the project directory, you can run:
+                Saleh binShalhoub is  an architectural interior and Project management office, experienced in the Saudi market that select the best team of professionals and companies in order to achieve the goals of every project we develop.                
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Website Pages:**
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+**Landing Page: Home Page** In this page a navigation bar exist that user presses on the preferred tab then it redirects him/her to the required page. 
+Home page has card group that has 3 main jobs company offers. Each card has a short description of the process offered. If user intrested to read more it he/ she can press of the title of read more to redirect him/her to the required page. Last part of this page our clients and logo of each of them in cards format.
 
-### `npm test`
+**Project Page: !** In this page map is shown with few markers that points to the project service accomplished on this certain location. User clicks on title service and it redirect him/her to the project image. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Services Page: !** In this page few lines description of the company services. 
 
-### `npm run build`
+**Portfolio Page: !** In this page slide show of the accomplished projects. It has method that calls all pictures from database in data file.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Contact Us Page: !** In this page contact information is presented.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What You've Learned
 
-### `npm run eject`
+- **create Website Using React**:
+- **write Comments**:
+  This project helped me write comments easily, as I rarely write comments in development.
+- **Map Box**
+  Used this feature in building projects map.
+- **Slide Show**
+  Used this feature in building projects portfolio.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future Plans
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Slide show on each clicked project mark in map box**
+- **Contact Us Form**
+- **Slide show in Home Page**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Tech used
 
-## Learn More
+Visual Studio Code
+Node.js
+React
+react-bootstrap/Carousel
+react-mapbox-gl
+react-bootstrap/CardGroup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I deployed the Architecture website using React.
 
-### Code Splitting
+## Developer
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Maram AlShalhoub

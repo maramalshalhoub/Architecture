@@ -47,6 +47,9 @@ p{
 .con{
   text-align: center;
 }
+.card-img-top{
+height: 280px;
+}
 /* .carousel {
   position: absolute;
   max-width:900px;

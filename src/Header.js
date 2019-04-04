@@ -15,7 +15,7 @@ import Services from './Services';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 
- class Header extends Component {
+class Header extends Component {
   constructor(props) {
     super(props);
 
@@ -107,7 +107,7 @@ handleContact= ()=>{
           </Card.Body>
         </Card>
         <Card>
-          <Card.Img variant="top" src="https://i.ibb.co/jzz5dxZ/Architectural-Engineers.jpg" />
+          <Card.Img variant="top" src="https://i.ibb.co/jg0RS7L/pjimage.jpg"/>
           <Card.Body>
             <Card.Title onClick={this.handleProjects}>Projects</Card.Title>
             <Card.Text>
@@ -119,7 +119,7 @@ handleContact= ()=>{
           </Card.Footer>
         </Card>
         <Card>
-        <Card.Img variant="top" src="https://i.ibb.co/jzz5dxZ/Architectural-Engineers.jpg" />
+        <Card.Img variant="top" src="https://i.ibb.co/n1N6r1B/Our-offshore-service-1.jpg" />
           <Card.Body>
             <Card.Title onClick={this.handleServices} >Services</Card.Title>
             <Card.Text>
